@@ -1,0 +1,108 @@
+import os, sys, io
+import M5
+from M5 import *
+from hardware import *
+import time
+
+pin_label = None
+program_state_label = None
+rect0 = None
+label0 = None
+label1 = None
+label3 = None
+label2 = None
+rect_count = 0
+rect_x = 10
+rect_y = 98
+rgb2 = None
+
+
+input_pin = None
+input_value = 0
+input_timer = 0
+water_time = time.ticks_ms()
+rect_time = time.ticks_ms() 
+
+program_state = 'START'
+
+def setup():
+  global pin_label, program_state_label, input_pin, label0,label1,label2,label3, rect_count,rect_x,rect_y,rgb2
+  
+  label0 = Widgets.Label("Feb.9th", 5, 10, 1.0, 0xffffff, 0x222222, Widgets.FONTS.DejaVu18)
+  label1 = Widgets.Label("0 ml", 5, 34, 1.0, 0xffffff, 0x222222, Widgets.FONTS.DejaVu18)
+  label3 = Widgets.Label("Need Water!", 1, 49, 1.0, 0xffffff, 0x222222, Widgets.FONTS.DejaVu18)
+  #label2 = Widgets.Label("label2", 10, 59, 1.0, 0xffffff, 0x222222, Widgets.FONTS.DejaVu18)
+  rgb2 = RGB(io=38, n=10, type="SK6812")
+  M5.begin()
+  #pin_label = Widgets.Label("input", 5, 5, 1.0, 0xffffff, 0x000000, Widgets.FONTS.DejaVu18)
+  #program_state_label = Widgets.Label("START", 5, 25, 1.0, 0xffffff, 0x000000, Widgets.FONTS.DejaVu18)
+  # initialize input on pin 41 (built-in screen button on AtomS3):
+  #input_pin = Pin(41, mode=Pin.IN)
+  # initialize input on pin 1 with pull up to make it HIGH by default:
+  input_pin = Pin(1, mode=Pin.IN, pull=Pin.PULL_UP)
+
+def loop():
+  global pin_label, program_state_label,water_time, rect0, label0,label1,label2,label3
+  global input_value,rect_x,rect_y, rect_count, rect_time,rgb2
+  global input_timer
+  global program_state
+  
+  M5.update()
+  
+  label0.setVisible(True)
+  label1.setVisible(True)
+  label1.setText(str(rect_count) + '00 ml')
+  #label2.setVisible(True)
+  for i in range (rect_count):
+      rect0 = Widgets.Rectangle(rect_x+i*18, rect_y, 15, 15, 0xffffff, 0x13dfff)
+      rect0.setVisible(True)
+  # check input every 500 ms (half second):
+  if time.ticks_ms() > input_timer + 500:
+    # update input_timer with current time in milliseconds:
+    input_timer = time.ticks_ms()
+    # assign input_pin value to input_value variable:
+    input_value = input_pin.value()
+    # update pin_label text according to input_value:
+    if input_value == 0:              
+      #pin_label.setText('input LOW')
+      print("together")
+        
+      if(time.ticks_ms() > water_time + 10000):
+          print("Need Water")
+          for i in range(100):
+            rgb2.fill_color((99-i << 16) | (0 << 8) | 0)
+            
+          label1.setVisible(False)
+          label3.setVisible(True)
+    else:
+      #pin_label.setText('input HIGH')
+      print("Seperate")
+      label3.setVisible(False)
+      for i in range(100):
+            rgb2.fill_color((0 << 8) | (0 << 16) | (99-i))
+            time.sleep_ms(20)
+      label1.setVisible(True)
+      water_time = time.ticks_ms()
+      if(time.ticks_ms() > rect_time + 5000):
+        rect_count = rect_count+1
+        rect_time = time.ticks_ms() 
+        print(rect_count)
+      
+  # condition to check that the program is in START state:
+  if program_state == 'START':
+    # condition for changing program state to RUN:
+    if input_value == 0:
+      program_state = 'RUN'  
+      #program_state_label.setText('RUN')
+  
+if __name__ == '__main__':
+  try:
+    setup()
+    while True:
+      loop()
+  except (Exception, KeyboardInterrupt) as e:
+    try:
+      from utility import print_error_msg
+      print_error_msg(e)
+    except ImportError:
+      print("please update to latest firmware")
