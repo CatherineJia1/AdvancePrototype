@@ -3,5 +3,5 @@ This is my Github
 
 ### Project 01 
 
-[AquaAlert](Project1 - AquaAlert) - An installation that remind you to drink water / code
+[AquaAlert](Project1-AquaAlert) - An installation that remind you to drink water / code
 [Diagram](未命名作品.jpg) - The state / flowChart of the installation
