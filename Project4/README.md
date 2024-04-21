@@ -9,12 +9,18 @@ The Kit includes Value Modular, Shape Modular, and For Loop Modular. The user co
 ### Project OutCome
 
 ### Project Ideation
-![Initial Idea](project4/initialidea.png)
+![Initial Idea](Project4/initialidea.jpg)
+.
+![approac1](Project4/idea2.jpg)
 
-![approac1](project4/idea2.jpg)
+![approac1](Project4/idea3.jpg)
 
-![approac1](project4/idea3.jpg)
-
-![all imput](project4/idea2.jpg)
+![all imput](Project4/idea2.jpg)
 
 ### Hardware
+- Atom3 Board * 2
+- Potentiometer * 5
+- light sensor * 1
+- wire * n
+
+   
