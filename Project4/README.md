@@ -23,8 +23,13 @@ The Kit includes Value Modular, Shape Modular, and For Loop Modular. The user co
 - light sensor * 1
 - wire * n
 
-![wireconnection of Value Module](input.jpg)  
+Wireconnection of Value Module
+![wireconnection of Value Module](Value_Module_Connection.png)  
 
-![wireconnection of Shape Module](input.jpg)  
+Wireconnection of Shape Module
+Specially, due to the limitation of the input on Atom3, I modified the wire and connected to pin1,2,6,8
+![wireconnection of Shape Module](Shape_Connection.png)  
+![wireconnection of Shape Module](Shape__Module_Connection.png)  
 
-![wireconnection of For Loop Module](input.jpg)  
+Wireconnection of For Loop Module
+![wireconnection of Shape Module](For_Connection.png)  
