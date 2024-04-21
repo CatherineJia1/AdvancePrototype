@@ -9,8 +9,8 @@ The Kit includes Value Modular, Shape Modular, and For Loop Modular. The user co
 ### Project OutCome
 
 ### Project Ideation
-![Initial Idea](Project4/initialidea.jpg)
-.
+![Initial Idea](initialidea.jpg)
+
 ![approac1](Project4/idea2.jpg)
 
 ![approac1](Project4/idea3.jpg)
