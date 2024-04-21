@@ -34,6 +34,15 @@ Specially, due to the limitation of the input on Atom3, I modified the wire and 
 Wireconnection of For Loop Module
 ![wireconnection of Shape Module](For_Connection.jpg)  
 
-###Firmware
+### Firmware
 This project includes bluetooth communication of two atom3 board, and atom3 board send data to the web. 
+
 [Bluetooth Connection](thonny/bluetooth.py)
+
+The bluetooth imported and use .write() method to send data of for_modlue_value, which is a Potentiometer value shows the number of loops. and light sensor value, which tells whether shape module is connected to the for loop module. It sent those 2 datas to other atom 3 board
+for_module_value = for_module.read()
+  light_module_value = light_module.read()
+  #print('write to bleuart..')
+  print(str(for_module_value)+ "," +str(light_module_value))
+  #ble_server.write('hello M5!')
+  ble_server.write(str(for_module_value)+ "," +str(light_module_value))
