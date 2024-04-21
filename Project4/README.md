@@ -24,12 +24,12 @@ The Kit includes Value Modular, Shape Modular, and For Loop Modular. The user co
 - wire * n
 
 Wireconnection of Value Module
-![wireconnection of Value Module](Value_Module_Connection.png)  
+![wireconnection of Value Module](Value_Module_Connection.jpg)  
 
 Wireconnection of Shape Module
 Specially, due to the limitation of the input on Atom3, I modified the wire and connected to pin1,2,6,8
-![wireconnection of Shape Module](Shape_Connection.png)  
-![wireconnection of Shape Module](Shape_Module_Connection.png)  
+![wireconnection of Shape Module](Shape_Connection.jpg)  
+![wireconnection of Shape Module](Shape_Module_Connection.jpg)  
 
 Wireconnection of For Loop Module
-![wireconnection of Shape Module](For_Connection.png)  
+![wireconnection of Shape Module](For_Connection.jpg)  
