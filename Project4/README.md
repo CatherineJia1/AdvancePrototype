@@ -11,11 +11,11 @@ The Kit includes Value Modular, Shape Modular, and For Loop Modular. The user co
 ### Project Ideation
 ![Initial Idea](initialidea.jpg)
 
-![approac1](idea2.jpg)
+![approac1](idea2.png)
 
 ![approac1](idea3.jpg)
 
-![all imput](idea2.jpg)
+![all imput](input.jpg)
 
 ### Hardware
 - Atom3 Board * 2
@@ -23,4 +23,8 @@ The Kit includes Value Modular, Shape Modular, and For Loop Modular. The user co
 - light sensor * 1
 - wire * n
 
-   
+![wireconnection of Value Module](input.jpg)  
+
+![wireconnection of Shape Module](input.jpg)  
+
+![wireconnection of For Loop Module](input.jpg)  
