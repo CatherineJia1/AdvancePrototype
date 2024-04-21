@@ -83,3 +83,46 @@ In the pyscipt, it reads the value from atom3 by split the print statement accor
     for_value = int(data_list[5])
     for_state = data_list[6]
 ```
+
+Then, draw the shape according to the value. 
+Use the if statement to seperate whether the shape module is in touch with for loop
+```
+if(for_state == "On"):
+```
+Using if statement to seperate different shapes it going to draw. Map the Potentiometer to the canvas by deviding (it could also be using map_value function)
+translate and rotate the shape inside for loop 
+use push and pop each time.
+```
+     for i in range (int(for_value /200)) : 
+      p5.push()
+      p5.rotate(p5.PI*2 / int(for_value /200) * i)
+      p5.translate((position_x - 2000)/2,(position_y- 2000)/5)
+      if(shape_value == "Rect"):
+        p5.rect(0, 0, value_x / 4, value_y / 8)
+      elif(shape_value == "Hex"):
+        polygon(0, 0, value_x / 4, 6)
+      elif(shape_value == "Oct"):
+        polygon(0, 0, value_x / 4, 8)
+      else:
+        p5.ellipse(0,0,value_x /4, value_y / 5)
+     p5.pop()
+```
+Same with out for loop
+```
+  else:
+    p5.translate((position_x - 2000)/2,(position_y- 2000)/5)
+    if(shape_value == "Rect"):
+      # print(value_x)
+      p5.rect(0, 0, value_x / 4, value_y / 8)
+    elif(shape_value == "Hex"):
+        polygon(0, 0, value_x / 4, 6)
+    elif(shape_value == "Oct"):
+        polygon(0, 0, value_x / 4, 8)
+    else:
+        # print(shape_value)
+        p5.ellipse(0,0,value_x / 4, value_y / 8) 
+
+  p5.pop()
+
+
+```
