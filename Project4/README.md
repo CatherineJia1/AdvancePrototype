@@ -41,9 +41,11 @@ This project includes bluetooth communication of two atom3 board, and atom3 boar
 
 The bluetooth imported and use .write() method to send data of for_modlue_value, which is a Potentiometer value shows the number of loops. and light sensor value, which tells whether shape module is connected to the for loop module. It sent those 2 datas to other atom 3 board
 
-` for_module_value = for_module.read()
+```
+  for_module_value = for_module.read()
   light_module_value = light_module.read()
   #print('write to bleuart..')
   print(str(for_module_value)+ "," +str(light_module_value))
   #ble_server.write('hello M5!')
   ble_server.write(str(for_module_value)+ "," +str(light_module_value))`
+```
