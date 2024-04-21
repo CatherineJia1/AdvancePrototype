@@ -36,7 +36,7 @@ Specially, due to the limitation of the input on Atom3, I modified the wire and 
 ![wireconnection of Shape Module](Shape_Module_Connection.jpg)  
 
 Wireconnection of For Loop Module
-![wireconnection of Shape Module](For_Connection.jpg)  
+![wireconnection of Shape Module](For_Connection.png)  
 
 ### Firmware
 This project includes bluetooth communication of two atom3 board, and atom3 board send data to the web. 
