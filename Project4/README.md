@@ -29,7 +29,7 @@ Wireconnection of Value Module
 Wireconnection of Shape Module
 Specially, due to the limitation of the input on Atom3, I modified the wire and connected to pin1,2,6,8
 ![wireconnection of Shape Module](Shape_Connection.png)  
-![wireconnection of Shape Module](Shape__Module_Connection.png)  
+![wireconnection of Shape Module](Shape_Module_Connection.png)  
 
 Wireconnection of For Loop Module
 ![wireconnection of Shape Module](For_Connection.png)  
