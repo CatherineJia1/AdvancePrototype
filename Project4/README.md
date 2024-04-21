@@ -147,4 +147,4 @@ def  polygon(x, y, radius, npoints):
 
 ### Enclosure / Mechanical Design
 This project shapes are build in Solidworks. The idea is instead of connect the wire, the user could connect the shape and that makes the wire connected. So I design an N shape for Value Module that could be connected to the shape module and for loop module 
-
+![Solidworks Modeling](solid.png)
