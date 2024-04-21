@@ -152,3 +152,8 @@ def  polygon(x, y, radius, npoints):
 ### Enclosure / Mechanical Design
 This project shapes are build in Solidworks. The idea is instead of connect the wire, the user could connect the shape and that makes the wire connected. So I design an N shape for Value Module that could be connected to the shape module and for loop module 
 ![Solidworks Modeling](Solid.png)
+
+## Conclusion
+This project trying to explore a new coding experience,with more intuative and interactive blocks. It helps others to learn more about coding, especially in p5.js. By using modules, all the value modules are identical and could be replaces by others, which make user less likely to get confused / make mistake. The specially connection shape makes sure that the user wouldn't mis connect.
+
+In the future, the project could be push forwords by adding more shape modules, adding if statement modules, expanding to 3D area, and I will keep exploring those posibilities
