@@ -67,3 +67,19 @@ In the main.py, the shape_value could be changed to swith between different shap
       else:
         shape_value = "Rect"
 ```
+
+In the pyscipt, it reads the value from atom3 by split the print statement according to ",". It will return a list and each value is different elements in the list
+
+```
+  data_string = document.getElementById("data").innerText
+  # # split data_string by comma, making a list:
+  data_list = data_string.split(',')
+  if(len(data_list)>5): # the bluetooth sometimes have delay, so it wouln't have 7 datas. Use this line to prevent the error message when bluetooth has delay. 
+    position_x = int(data_list[0])
+    position_y = int(data_list[1])
+    value_x = int(data_list[2])
+    value_y = int(data_list[3])
+    shape_value = str(data_list[4])
+    for_value = int(data_list[5])
+    for_state = data_list[6]
+```
