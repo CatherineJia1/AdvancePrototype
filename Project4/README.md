@@ -126,3 +126,25 @@ Same with out for loop
 
 
 ```
+
+
+Specially, there is a function for draw hexagon / other polygon shape:
+
+```
+def  polygon(x, y, radius, npoints):
+  angle = p5.PI*2 / npoints
+  p5.beginShape()
+  i = 0
+  while(i<p5.PI*2):
+   
+    sx = x + p5.cos(i) * radius
+    sy = y + p5.sin(i) * radius
+    p5. vertex(sx, sy)
+    i += angle
+  
+  p5.endShape(p5.CLOSE)
+```
+
+### Enclosure / Mechanical Design
+This project shapes are build in Solidworks. The idea is instead of connect the wire, the user could connect the shape and that makes the wire connected. So I design an N shape for Value Module that could be connected to the shape module and for loop module 
+
