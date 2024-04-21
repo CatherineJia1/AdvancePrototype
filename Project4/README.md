@@ -132,7 +132,7 @@ Same with out for loop
 ```
 
 
-Specially, there is a function for draw hexagon / other polygon shape:
+Specially, there is a function for draw hexagon / other polygon shape(from p5.js website) :
 
 ```
 def  polygon(x, y, radius, npoints):
