@@ -49,3 +49,21 @@ The bluetooth imported and use .write() method to send data of for_modlue_value,
   #ble_server.write('hello M5!')
   ble_server.write(str(for_module_value)+ "," +str(light_module_value))`
 ```
+
+Main.py mainly get the value of x,y position as weel as size by Potentiometer, also change different size
+
+In the main.py, the shape_value could be changed to swith between different shapes,add times to avoid click the screen once but change multiple times of shape.
+```
+  if time.ticks_ms() > button_timer + 200:
+    button_timer = time.ticks_ms()  # update button_timer
+ # update button_timer
+    if button_value == 0: #switch between different shape
+      if shape_value == "Rect":
+        shape_value = "Hex"
+      elif shape_value == "Hex":
+        shape_value = "Oct"
+      elif shape_value == "Oct":
+        shape_value = "Cir"
+      else:
+        shape_value = "Rect"
+```
