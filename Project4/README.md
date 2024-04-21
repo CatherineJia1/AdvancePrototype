@@ -33,3 +33,7 @@ Specially, due to the limitation of the input on Atom3, I modified the wire and 
 
 Wireconnection of For Loop Module
 ![wireconnection of Shape Module](For_Connection.jpg)  
+
+###Firmware
+This project includes bluetooth communication of two atom3 board, and atom3 board send data to the web. 
+[Bluetooth Connection](thonny/bluetooth.py)
