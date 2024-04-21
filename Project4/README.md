@@ -11,11 +11,11 @@ The Kit includes Value Modular, Shape Modular, and For Loop Modular. The user co
 ### Project Ideation
 ![Initial Idea](initialidea.jpg)
 
-![approac1](Project4/idea2.jpg)
+![approac1](idea2.jpg)
 
-![approac1](Project4/idea3.jpg)
+![approac1](idea3.jpg)
 
-![all imput](Project4/idea2.jpg)
+![all imput](idea2.jpg)
 
 ### Hardware
 - Atom3 Board * 2
