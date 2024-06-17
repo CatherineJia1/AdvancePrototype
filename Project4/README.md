@@ -9,6 +9,7 @@ The Kit includes Value Modular, Shape Modular, and For Loop Modular. The user co
 ## Project OutCome
 
 Prototype: https://youtu.be/meJKi2kt-As
+[YouTube Prototype Video]((https://youtu.be/meJKi2kt-As))
 
 ## Project Ideation
 ![Initial Idea](initialidea.jpg)
