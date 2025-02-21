@@ -10,5 +10,7 @@ This is my Github
 [CodeBlock](Project4/README.md) - Modular Programming Prototyping Kit
 
 
+<video src="https://github.com/rayytsn9/ROBOTT/assets/79029536/62f541aa-aa8c-43f5-9ead-4b7a2e0d7c2a" width="300" />
+
 https://github.com/user-attachments/assets/d50ec63a-86a4-4112-9a30-3344ec9742e3
 
