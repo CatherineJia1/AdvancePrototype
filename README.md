@@ -11,10 +11,7 @@ This is my Github
 
 
 
-https://github.com/user-attachments/assets/42405a93-a6b5-492e-968b-4b1a78cb69c0
 
-[![Watch the video](https://github.com/CatherineJia1/AdvancePrototype/blob/main/Test.mp4)]
 
-<video src="(https://github.com/user-attachments/assets/42405a93-a6b5-492e-968b-4b1a78cb69c0)" width="300" />
 
 
