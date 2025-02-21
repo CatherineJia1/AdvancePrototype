@@ -10,7 +10,7 @@ This is my Github
 [CodeBlock](Project4/README.md) - Modular Programming Prototyping Kit
 
 <video width="600" controls>
-  <source src="https://catherinejia1.github.io/AdvancePrototype/videos/Test.mp4" type="video/mp4">
+  <source src="https://catherinejia1.github.io/AdvancePrototype/Test.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
