@@ -9,6 +9,11 @@ This is my Github
 ### Final Project
 [CodeBlock](Project4/README.md) - Modular Programming Prototyping Kit
 
+<video width="600" controls>
+  <source src="https://catherinejia1.github.io/AdvancePrototype/videos/Test.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 
 https://github.com/user-attachments/assets/4d79af1e-ddad-42d8-a07d-3cb31bfeebbd
 
