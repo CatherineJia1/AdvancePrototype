@@ -15,8 +15,5 @@ This is my Github
 </video>
 
 
-https://github.com/user-attachments/assets/4d79af1e-ddad-42d8-a07d-3cb31bfeebbd
-
-
 
 
