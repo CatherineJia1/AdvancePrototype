@@ -10,6 +10,11 @@ This is my Github
 [CodeBlock](Project4/README.md) - Modular Programming Prototyping Kit
 
 
-<video src="(https://github.com/CatherineJia1/AdvancePrototype/blob/main/Test.mp4)" width="300" />
+
+https://github.com/user-attachments/assets/42405a93-a6b5-492e-968b-4b1a78cb69c0
+
+
+
+<video src="(https://github.com/user-attachments/assets/42405a93-a6b5-492e-968b-4b1a78cb69c0)" width="300" />
 
 
